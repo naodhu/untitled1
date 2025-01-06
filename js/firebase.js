@@ -1,16 +1,26 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
 import { getFirestore } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-firestore.js";
-import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-auth.js";
+import {
+  getAuth,
+  signInWithEmailAndPassword,
+  createUserWithEmailAndPassword,
+  onAuthStateChanged,
+  signOut,
+} from "https://www.gstatic.com/firebasejs/11.1.0/firebase-auth.js";
+
+// Load environment variables
+import { config } from "dotenv";
+config();
 
 // Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBElZvZI_KsxYcPvPwxL_gWkERLtOyV4A0",
-  authDomain: "mark-tracker-55926.firebaseapp.com",
-  projectId: "mark-tracker-55926",
-  storageBucket: "mark-tracker-55926.appspot.com",
-  messagingSenderId: "245266816771",
-  appId: "1:245266816771:web:8454ff90407561db911336",
-  measurementId: "G-08J6SVNMMM"
+  apiKey: process.env.FIREBASE_API_KEY,
+  authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.FIREBASE_PROJECT_ID,
+  storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.FIREBASE_APP_ID,
+  measurementId: process.env.FIREBASE_MEASUREMENT_ID,
 };
 
 // Initialize Firebase
