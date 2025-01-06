@@ -167,7 +167,9 @@ This project is licensed under the MIT License. See the `LICENSE` file for more 
 ## Contact
 
 For any questions or feedback, please contact:
-**Your Name**  
-Email: naodhunde@gmail.com
-GitHub: [naodhu](https://github.com/naodhu)  
-LinkedIn: [naodhu](https://linkedin.com/in/naodhu)
+
+**Your Name**
+
+- Email: [naodhunde@gmail.com](mailto:naodhunde@gmail.com)
+- GitHub: [naodhu](https://github.com/naodhu)
+- LinkedIn: [naodhu](https://linkedin.com/in/naodhu)

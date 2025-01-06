@@ -41,8 +41,9 @@ function fetchMarks(userId) {
 }
 
 // Add or update a mark
+
 async function addOrUpdateMark() {
-  console.log("addOrUpdateMark function called"); // Debugging log
+  console.log("Starting addOrUpdateMark function"); // Log the start of the function
   const subjectInput = document.getElementById("subject");
   const markInput = document.getElementById("mark");
 
