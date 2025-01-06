@@ -92,7 +92,7 @@ The landing page includes links to social media platforms (Facebook, Dribbble, I
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/your-username/GradeGenius.git
+   git clone https://github.com/naodhu/GradeGenius.git
    cd GradeGenius
    ```
 
