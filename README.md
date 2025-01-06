@@ -172,4 +172,4 @@ For any questions or feedback, please contact:
 
 - Email: [naodhunde@gmail.com](mailto:naodhunde@gmail.com)
 - GitHub: [naodhu](https://github.com/naodhu)
-- LinkedIn: [naodhu](https://linkedin.com/in/naodhu)
+- LinkedIn: [Naod](https://www.linkedin.com/in/naod-hunde/)
