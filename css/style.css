@@ -1,0 +1,227 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Theme */
+body.dark-theme {
+  background-color: #1a1a1a;
+  color: #f4f4f9;
+}
+
+.container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+body.dark-theme .container {
+  background-color: #2c2c2c;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+h1, h2 {
+  margin-bottom: 1.5rem;
+  color: #007bff;
+}
+
+body.dark-theme h1,
+body.dark-theme h2 {
+  color: #4dabf7;
+}
+
+.input-group {
+  margin-bottom: 1.5rem;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-theme .input-group input {
+  background-color: #444;
+  border-color: #555;
+  color: #f4f4f9;
+}
+
+.btn, #logoutBtn, #themeToggleBtn {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn {
+  background-color: #007bff;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+#logoutBtn {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+#logoutBtn:hover {
+  background-color: #c82333;
+}
+
+#themeToggleBtn {
+  background-color: #6c757d;
+  color: #fff;
+  margin-top: 1rem;
+}
+
+#themeToggleBtn:hover {
+  background-color: #5a6268;
+}
+
+.marks-list, .average {
+  margin-top: 2rem;
+}
+
+.marks-list h2, .average h2 {
+  margin-bottom: 1rem;
+}
+
+.marks-list ul {
+  list-style: none;
+}
+
+.marks-list ul li {
+  padding: 0.5rem;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-theme .marks-list ul li {
+  border-bottom-color: #555;
+}
+
+.average p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+body.dark-theme .average p {
+  color: #4dabf7;
+}
+
+/* Default (Light Theme) Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+table th,
+table td {
+  padding: 0.75rem;
+  border: 1px solid #ddd; /* Light border for light theme */
+}
+
+table th {
+  background-color: #f8f9fa; /* Light gray background for headers */
+  color: #333; /* Dark text for headers */
+}
+
+table td {
+  background-color: #fff; /* White background for cells */
+  color: #333; /* Dark text for cells */
+}
+
+/* Dark Theme Table Styles */
+body.dark-theme table th,
+body.dark-theme table td {
+  border: 1px solid #555; /* Dark border for dark theme */
+}
+
+body.dark-theme table th {
+  background-color: #333; /* Dark gray background for headers */
+  color: #f4f4f9; /* Light text for headers */
+}
+
+body.dark-theme table td {
+  background-color: #444; /* Darker gray background for cells */
+  color: #f4f4f9; /* Light text for cells */
+}
+
+/* Styles for buttons inside the table */
+table button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Edit Button */
+table button:first-of-type {
+  background-color: #28a745; /* Green for Edit */
+  color: #fff;
+  margin-right: 0.5rem;
+}
+
+table button:first-of-type:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Delete Button */
+table button:last-of-type {
+  background-color: #dc3545; /* Red for Delete */
+  color: #fff;
+}
+
+table button:last-of-type:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+
+/* Dark Theme Styles for Table Buttons */
+body.dark-theme table button:first-of-type {
+  background-color: #218838; /* Darker green for dark theme */
+}
+
+body.dark-theme table button:first-of-type:hover {
+  background-color: #1e7e34; /* Even darker green on hover */
+}
+
+body.dark-theme table button:last-of-type {
+  background-color: #c82333; /* Darker red for dark theme */
+}
+
+body.dark-theme table button:last-of-type:hover {
+  background-color: #b21f2d; /* Even darker red on hover */
+}
